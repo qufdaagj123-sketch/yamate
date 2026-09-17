@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Kittylol · Script Platform{% endblock %}
+{% block body %}
+<div class="public">
+<nav class="public-nav"><a class="logo" href="/"><b>K</b> KITTYLOL</a><div class="nav-links"><a href="#features">Features</a><a href="#api">API</a><a class="btn btn-light" href="/login">Dashboard</a></div></nav>
+<section class="hero"><div class="tag">SCRIPT DELIVERY PLATFORM</div><h1>Build. Manage.<br><span>Deliver.</span></h1><p>Kittylol gives you one control panel for scripts, loader tokens, users, HWIDs, logs and API delivery.</p><div class="hero-actions"><a class="btn btn-light" href="/login">Open Dashboard</a><a class="btn btn-dark" href="#features">Explore Features</a></div><div class="hero-glow"></div></section>
+<section id="features" class="feature-section"><div class="section-title"><span>01</span><h2>Everything in one place.</h2></div><div class="feature-grid">
+<div class="feature"><i>01</i><h3>Script Manager</h3><p>Upload Lua/Luau files, manage versions and control availability.</p></div>
+<div class="feature"><i>02</i><h3>Token System</h3><p>Create lifetime or expiring loader tokens and revoke them instantly.</p></div>
+<div class="feature"><i>03</i><h3>Access Control</h3><p>Manage users, status and HWID records from the dashboard.</p></div>
+<div class="feature"><i>04</i><h3>API Delivery</h3><p>Serve your scripts through a clean versioned loader endpoint.</p></div>
+<div class="feature"><i>05</i><h3>Logs</h3><p>Track script creation, token changes, user actions and loader requests.</p></div>
+<div class="feature"><i>06</i><h3>Render Ready</h3><p>Deploy the backend directly with Render and PostgreSQL.</p></div>
+</div></section>
+<section id="api" class="api-preview"><div><div class="tag">API</div><h2>Simple loader endpoint.</h2><p>Browser requests get the Kittylol loader page. Client requests receive the script source.</p></div><code>/files/v4/loader/&lt;token&gt;.lua</code></section>
+<footer>© Kittylol · Original project</footer>
+</div>
+{% endblock %}

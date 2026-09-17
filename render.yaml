@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: api-kittylol
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: ADMIN_USERNAME
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: DATABASE_URL
+        sync: false
+      - key: HOMEPAGE_URL
+        value: /
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: MAX_SCRIPT_BYTES
+        value: "2097152"

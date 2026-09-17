@@ -1,0 +1,22 @@
+{
+  "name": "Kittylol Full Render Project",
+  "version": "2.0.0",
+  "files": [
+    ".gitignore",
+    "README.md",
+    "app/__init__.py",
+    "app/main.py",
+    "app/static/app.js",
+    "app/static/style.css",
+    "app/templates/base.html",
+    "app/templates/dashboard.html",
+    "app/templates/home.html",
+    "app/templates/loader.html",
+    "app/templates/login.html",
+    "docs/API.md",
+    "docs/DEPLOY.md",
+    "render.yaml",
+    "requirements.txt",
+    "tests/test_app.py"
+  ]
+}

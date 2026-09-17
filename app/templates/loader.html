@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Loader · Kittylol{% endblock %}
+{% block body %}
+<div class="loader-page"><div class="loader-card"><div class="loader-mark">K</div><div class="tag">KITTYLOL LOADER</div>
+{% if valid %}<h1>{{ script.name }}</h1><div class="live"><i></i> ACTIVE</div><div class="loader-info"><div><span>VERSION</span><b>{{ script.version }}</b></div><div><span>LOADS</span><b>{{ script.loads }}</b></div><div><span>TOKEN</span><b>{{ token.value }}</b></div><div><span>EXPIRY</span><b>{{ token.expires_at.strftime("%Y-%m-%d") if token.expires_at else "LIFETIME" }}</b></div></div>
+{% else %}<h1>Loader unavailable</h1><p>{{ message }}</p>{% endif %}
+<a class="btn btn-light wide" href="{{ homepage_url }}">Open Homepage</a></div></div>
+{% endblock %}
